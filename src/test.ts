@@ -7,7 +7,7 @@ afterAll(() => {
 
 test("do it", () => {
   const db = new Database("test.db");
-  db.pragma("journal_mode = WAL");
+  // db.pragma("journal_mode = WAL");
   db.exec(
     "create table users(first_name text not null, last_name text not null );"
   );
